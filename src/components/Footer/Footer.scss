@@ -1,0 +1,48 @@
+@import "../../components/colors";
+.Footer {
+  margin-top: 50px;
+  background-color: $dark-gray;
+  padding: 50px 50px 50px 50px;
+  display: flex;
+  justify-content: space-around;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    padding: 50px 20px 50px 20px;
+  }
+  .FooterLeft {
+    display: flex;
+    justify-content: space-around;
+    flex: 3;
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+    .FooterColumn {
+      .FooterTitle {
+        h5 {
+          color: $white;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+      }
+      .subCategories {
+        display: flex;
+        flex-direction: column;
+        color: $light-gray;
+        font-size: 0.8rem;
+        font-weight: 400;
+        margin-top: 10px;
+        span {
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+  .FooterRight {
+    flex: 1;
+    .CopyRight {
+      color: $light-gray;
+      padding: 10px;
+      font-size: 0.8rem;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import "../../components/colors";
+.sidebar {
+  @media (max-width: 600px) {
+    display: none;
+  }
+  .sidebar__categories {
+    margin-top: 60px;
+  }
+  flex: 0.2;
+  .sidebar__options {
+    h5 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    ul {
+      padding: 0;
+      li {
+        list-style-type: none;
+        font-weight: 500;
+        font-size: 1rem;
+        color: $gray;
+        cursor: pointer;
+        padding: 10px 20px;
+        border: 1px solid $light-gray;
+        &:focus {
+          background-color: $dark-gray;
+          color: $white;
+        }
+      }
+    }
+  }
+}

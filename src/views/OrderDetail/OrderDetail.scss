@@ -1,0 +1,91 @@
+@import "../../components/colors";
+.OrderDetail {
+  margin: 55px;
+  @media (max-width: 600px) {
+    margin: 10px;
+  }
+  .orderDetailHeader {
+    padding: 25px;
+    background-color: $pale-gray;
+    text-align: center;
+
+    h3 {
+      font-weight: 600;
+    }
+  }
+  .orderDetailContent {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+    .orderDetailLeft {
+      width: 60%;
+      margin-right: 10px;
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+      h3 {
+        font-weight: 400;
+        margin: 20px 0;
+      }
+      .orderDetailCard {
+        display: flex;
+        justify-content: space-between;
+
+        .cardLeft {
+          display: flex;
+          .imageContainer {
+            img {
+              width: 224px;
+              @media (max-width: 600px) {
+                width: 80px;
+              }
+            }
+          }
+          .detailContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 10px;
+            .nameDate {
+              .orderName {
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+      .orderTotal {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        margin: 25px 0;
+        .totalGroup {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+    .orderDetailRight {
+      padding: 30px;
+      background-color: $pale-gray;
+      margin-top: 25px;
+      h3 {
+        font-weight: 600;
+      }
+      .orderRightContent {
+        h4 {
+          font-weight: 600;
+          margin-top: 10px;
+        }
+        h3 {
+          margin-top: 5px;
+        }
+        .shippingAddress {
+          width: 70%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.category {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 15px;
+  .categorySubHeader {
+    display: flex;
+    .categoryDropdown {
+      flex-direction: row;
+      @media (min-width: 601px) {
+        display: none;
+      }
+    }
+  }
+  .categoryBody {
+    display: flex;
+  }
+}

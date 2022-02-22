@@ -1,0 +1,31 @@
+// html {
+//   font-size: 62.5%;
+// }
+
+.carousel-wrapper {
+  padding: 3rem 3rem;
+  display: inline-block;
+  margin-top: 4rem;
+  height: 25rem;
+  margin-bottom: -12.5rem;
+}
+
+@media (max-width: 998px) {
+  html {
+    font-size: 55%;
+  }
+  .carousel-wrapper {
+    margin-top: 20rem;
+    margin-bottom: -25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+  .carousel-wrapper {
+    margin-top: 20rem;
+    margin-bottom: -25rem;
+  }
+}

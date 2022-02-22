@@ -1,0 +1,36 @@
+
+.ProductCard {
+  width: 224px;
+  margin: 20px;
+  .ImgContainer {
+    width: 224px;
+    object-fit: contain;
+    img {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+  .ProductDetailContainer {
+    .ProductContent {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        text-align: left;
+        cursor: pointer;
+      }
+    }
+    .productBuyContainer {
+      display: flex;
+      justify-content: space-between;
+      .priceRating {
+        text-align: left;
+        p {
+          font-size: 1.2rem;
+          padding-bottom: 5px;
+        }
+      }
+      
+    }
+  }
+}

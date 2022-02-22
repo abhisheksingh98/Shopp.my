@@ -1,0 +1,71 @@
+@import "../../components/colors";
+.navbar {
+  font-family: "Raleway", sans-serif;
+  color: "#202124";
+  font-weight: 500;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  width: 90%;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background-color: white;
+
+  .navbarLogo {
+    @media (max-width: 300px) {
+      display: none;
+    }
+  }
+  #logo {
+    width: 150px;
+  }
+
+  .navbarMobileLogo {
+    @media (min-width: 601px) {
+      display: none;
+    }
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+  .navbar__link {
+    color: black;
+    text-decoration: none;
+  }
+
+  .navbar_desktopMenu {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar_right {
+    display: flex;
+    .navbar_desktopMenu {
+      @media (max-width: 600px) {
+        display: none;
+      }
+    }
+    .navbar_mobileMenu {
+      @media (min-width: 601px) {
+        display: none;
+      }
+    }
+  }
+
+  .dropdown {
+    button{
+      background-color: #202124;
+      color: white;
+      border: none;
+      outline-width: 0;
+      padding: 0.5rem 1.5rem 0.8rem 1.5rem;
+      margin-left: 2rem;
+      cursor: pointer;
+      transition: padding 0.5s;
+    }
+  }
+}

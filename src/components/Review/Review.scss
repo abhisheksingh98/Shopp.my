@@ -1,0 +1,17 @@
+@import "../../components/colors";
+.review {
+  margin: 15px 0px;
+  .reviewHeader {
+    .custName {
+      font-weight: 400;
+    }
+    .ratingDate {
+      display: flex;
+      .Date {
+        font-size: 0.8rem;
+        color: $gray;
+        margin-left: 10px;
+      }
+    }
+  }
+}

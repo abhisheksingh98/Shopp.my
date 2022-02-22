@@ -1,0 +1,7 @@
+.productView {
+  flex: 0.3;
+}
+
+.productView__main {
+  height: 80vh;
+}

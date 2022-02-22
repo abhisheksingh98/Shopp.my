@@ -1,0 +1,18 @@
+@import "../../components/colors";
+.productColors{
+    display: flex;
+    align-items: center;
+    margin-top:20px;
+    margin-bottom:20px;
+    p{
+        margin-right: 50px;
+    }
+    .productColor{
+        width: 30px;
+        height: 30px;
+        background-color: $gray;
+        margin-right:10px;
+        cursor: pointer;
+        outline-width: 1px;
+    }
+}

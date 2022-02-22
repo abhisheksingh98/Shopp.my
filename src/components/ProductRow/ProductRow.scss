@@ -1,0 +1,31 @@
+.productRow {
+  margin: auto;
+  margin-top: 5px;
+  width: 90%;
+  @media(max-width: 600px){
+    width:100%;
+  }
+  h2{
+    text-align: center;
+    font-weight:600;
+    margin: 50px;
+    margin-top: 100px;
+  }
+}
+
+.productRow__itemsContainer {
+  display: flex;
+  align-items: center;
+
+}
+
+.productRow__items {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.productRow__items::-webkit-scrollbar {
+  display: none;
+}

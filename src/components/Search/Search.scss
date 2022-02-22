@@ -1,0 +1,13 @@
+@import "../colors";
+.search {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  width: 300px;
+  // border-bottom: 2px solid $gray;
+}
+
+.search__bar {
+  display: flex;
+  //   border: 1px solid black;
+}

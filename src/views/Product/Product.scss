@@ -1,0 +1,138 @@
+@import "../../components/colors";
+.Mui-focused {
+  border-color: $dark-gray;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  margin: 55px;
+  padding-top: 40px;
+  @media (max-width: 800px) {
+    margin: 5px;
+  }
+
+  .product__trail {
+    display: flex;
+    align-items: center;
+  }
+
+  .product__trailElement {
+    padding: 0 5px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .productArea {
+    display: flex;
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+
+    .productImages {
+      display: flex;
+      @media (max-width: 800px) {
+        flex-direction: column;
+      }
+      .productImage {
+        width: 402px;
+        img {
+          width: 100%;
+        }
+      }
+      .productTumbnails {
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 800px) {
+          flex-direction: row;
+        }
+        .productThumbnail {
+          width: 130px;
+          height: 130px;
+          margin-bottom: 5px;
+          margin-right: 5px;
+          background-position: center top;
+          opacity: 0.5;
+          &:focus {
+            opacity: 1;
+            outline-width: 0;
+          }
+          @media (max-width: 800px) {
+            width: 70px;
+            height: 70px;
+          }
+          cursor: pointer;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .productDetail {
+      margin-left: 100px;
+      width: 40%;
+      @media (max-width: 800px) {
+        width: 100%;
+        margin-left: 0;
+      }
+      .productTitle {
+        h2 {
+          font-weight: 400;
+        }
+      }
+      .priceRating {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+      }
+      .productInfo {
+        margin-top: 20px;
+        p {
+          font-size: 1rem;
+          color: $gray;
+        }
+        .qtyCart {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .cartBtn {
+            height: 50px;
+            width: 200px;
+            background-color: $orange;
+            color: $white;
+            outline-width: 0;
+            &:active {
+              background-color: $dark-gray;
+            }
+          }
+        }
+      }
+    }
+  }
+  .productReview {
+    margin: 25px 0px;
+    .reviewTitle {
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    .reviewBtn {
+      background-color: $pale-gray;
+      color: $dark-gray;
+      padding: 10px;
+      border: none;
+      width: 100px;
+      border-radius: 2px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:active {
+        background-color: $gray;
+        color: $white;
+      }
+    }
+  }
+}
